@@ -9,7 +9,7 @@ deriv(S_v) <- e * (S_v + I_v) - lambda_v * S_v - mu * S_v
 deriv(I_v) <- lambda_v * S_v - mu * I_v
 
 lambda_h = m * b_h * a * I_v   # human force of infection
-lambda_v = b_v * a * I_h      # mosquito force of infection
+lambda_v = b_v * a * I_h       # mosquito force of infection
 
 # initial conditions
 initial(S_h) <- 1 - I_init_h
@@ -17,11 +17,6 @@ initial(I_h) <- I_init_h
 
 initial(S_v) <- 1 - I_init_v
 initial(I_v) <- I_init_v
-
-# outputs
-output(R0) <- (m * a^2 * b_h * b_v) / (sigma * mu)
-output(m_threshold) <- (sigma * mu) / (a^2 * b_h * b_v)
-output(EIR) <- m * a * I_v * 365
 
 # parameter values 
 I_init_h <- 0.001             # proportion of infectious humans at start of epidemic
