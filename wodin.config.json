@@ -1,9 +1,9 @@
 {
-    "courseTitle": "Short Course 2025",
-    "savePrefix": "shortcourse-2025",
+    "courseTitle": "Kinshasa Workshop 2026",
+    "savePrefix": "kinshasa-workshop",
     "port": 3000,
     "appsPath": "apps",
-    "baseUrl": "https://epimodels.dide.ic.ac.uk/shortcourse-2025",
+    "baseUrl": "https://epimodels.dide.ic.ac.uk/kinshasa-workshop-2026",
     "odinApi": "http://odin.api:8001",
     "redisUrl": "redis://redis:6379"
 }
