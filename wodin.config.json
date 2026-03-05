@@ -1,9 +1,17 @@
 {
+<<<<<<< HEAD
     "courseTitle": "Kinshasa Workshop 2026",
     "savePrefix": "kinshasa-workshop",
     "port": 3000,
     "appsPath": "apps",
     "baseUrl": "https://epimodels.dide.ic.ac.uk/kinshasa-workshop-2026",
+=======
+    "courseTitle": "Mpox Workshop 2026",
+    "savePrefix": "mpox-workshop",
+    "port": 3000,
+    "appsPath": "apps",
+    "baseUrl": "https://epimodels.dide.ic.ac.uk/mpox-workshop",
+>>>>>>> 5d02313304b498853ab03081aaad4f3a25b3812e
     "odinApi": "http://odin.api:8001",
     "redisUrl": "redis://redis:6379"
 }
