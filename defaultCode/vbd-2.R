@@ -30,12 +30,16 @@ I_init_v <- 0                 # number of infectious mosquitoes at start of epid
 
 sigma <- user(0.02)           # human recovery rate
 
-mu <- 0.1                 # mosquito death rate
+mu <- 0.1                     # mosquito death rate
 e <- mu                       # mosquito birth rate
 n = 12                        # extrinsic incubation period
-p_surv_lat <- exp(-mu*n)	     # probability a mosquito survives the latent period.
+p_surv_lat <- exp(-mu*n)	    # probability a mosquito survives the latent period.
 
 m = user(10)                  # density of female mosquitoes per person. 
 a = user(0.3)                 # biting rate per female mosquito 
 b_h = 0.2                     # probability of infection in susceptible human given bite from infectious mosquito [0.2-0.5]
 b_v = 0.05                    # probability of infection in susceptible mosquito given bite on an infectious human [0.5]
+
+# outputs
+output(R0) <- (m * a^2 * b_h * b_v) / (sigma * mu)
+output(m_threshold) <- (sigma * mu) / (a^2 * b_h * b_v)
